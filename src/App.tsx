@@ -19,7 +19,7 @@ function App() {
             Todo App
           </Typography>
           <AddTask />
-          <Box width="80%" height="400px" sx={{ overflowY: "scroll" }}>
+          <Box width="80%" maxHeight="400px" sx={{ overflowY: "scroll" }}>
             <ShowTask />
           </Box>
         </FlexCenter>
