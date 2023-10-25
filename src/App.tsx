@@ -23,11 +23,15 @@ function App() {
       <Box padding="3rem 6%" width="80%">
         <FlexCenter sx={{ flexDirection: "column" }}>
           <Typography
-            variant="h5"
+            variant="h4"
             sx={{
               textTransform: "uppercase",
               fontWeight: "bold",
               textAlign: "center",
+              color: "white",
+              background: "linear-gradient(#a49e9e, #333)",
+              WebkitTextFillColor: "transparent",
+              WebkitBackgroundClip: "text",
             }}
           >
             Todo App

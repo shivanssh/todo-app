@@ -38,7 +38,7 @@ const goalsSlice = createSlice({
           : goal
       ),
 
-    deleteAllGoals: (state) => (state = []),
+    deleteAllGoals: () => [],
   },
 });
 
