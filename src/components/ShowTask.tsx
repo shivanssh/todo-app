@@ -42,7 +42,7 @@ const ShowTask = () => {
   );
 
   return (
-    <Box padding="0 2rem">
+    <Box padding="0  0 0 2rem" height="100%">
       {showModal && <EditGoal id={currentId} closeModal={handleCloseModal} />}
       {goals.length ? (
         <List>
