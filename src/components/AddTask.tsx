@@ -40,7 +40,7 @@ const AddTask = () => {
   return (
     <Box width="80%">
       <FlexCenter
-        padding="2rem"
+        padding="1rem"
         flexDirection={isNonMobileScreen ? "row" : "column"}
       >
         <TextField
@@ -57,7 +57,7 @@ const AddTask = () => {
         />
         <Button
           variant="contained"
-          sx={{ margin: "1rem", padding: "0.8rem" }}
+          sx={{ fontWeight: "700", margin: "1rem", padding: "1rem 2rem" }}
           onClick={handleGoalAdd}
           disabled={!goal}
         >

@@ -42,19 +42,20 @@ const ShowTask = () => {
   );
 
   return (
-    <Box padding="0  0 0 2rem" height="100%">
+    <Box padding="0  0 0 2rem">
       {showModal && <EditGoal id={currentId} closeModal={handleCloseModal} />}
       {goals.length ? (
         <List>
-          {goals.map(({ goal, id, checked }) => {
+          {goals.map(({ goal, id, checked }, idx) => {
             return (
               <FlexBetween key={id}>
-                <ListItem>{goal}</ListItem>
-                <ListItem
-                  sx={{ display: "flex", justifyContent: "space-around" }}
-                >
-                  {editAndDeleteButton(id, checked)}
-                </ListItem>
+                <FlexBetween>
+                  <ListItem>{idx + 1}.</ListItem>
+                  <ListItem>{goal}</ListItem>
+                </FlexBetween>
+                <FlexBetween>
+                  <ListItem>{editAndDeleteButton(id, checked)}</ListItem>
+                </FlexBetween>
               </FlexBetween>
             );
           })}

@@ -37,10 +37,17 @@ const goalsSlice = createSlice({
           ? { ...goal, checked: !goal.checked }
           : goal
       ),
+
+    deleteAllGoals: (state) => (state = []),
   },
 });
 
-export const { setGoal, deleteGoal, updateGoal, updateCheckbox } =
-  goalsSlice.actions;
+export const {
+  setGoal,
+  deleteGoal,
+  updateGoal,
+  updateCheckbox,
+  deleteAllGoals,
+} = goalsSlice.actions;
 
 export default goalsSlice.reducer;
