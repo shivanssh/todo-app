@@ -47,7 +47,7 @@ const AddTask = () => {
           fullWidth
           id="name"
           name="goal"
-          variant="filled"
+          variant="outlined"
           label="Add Goal"
           type="text"
           value={goal}

@@ -50,8 +50,12 @@ const ShowTask = () => {
             return (
               <FlexBetween key={id}>
                 <FlexBetween>
-                  <ListItem>{idx + 1}.</ListItem>
-                  <ListItem>{goal}</ListItem>
+                  <FlexBetween>
+                    <ListItem>{idx + 1}.</ListItem>
+                  </FlexBetween>
+                  <FlexBetween>
+                    <ListItem>{goal}</ListItem>
+                  </FlexBetween>
                 </FlexBetween>
                 <FlexBetween>
                   <ListItem>{editAndDeleteButton(id, checked)}</ListItem>

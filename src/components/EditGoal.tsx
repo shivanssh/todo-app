@@ -84,9 +84,9 @@ const EditGoal = ({ closeModal, id: targetId }: EditGoalProps) => {
           <FlexCenter
             width="50%"
             height="30%"
-            padding="1rem"
+            padding="1rem 2rem"
             sx={{
-              backgroundColor: "#FAF9F6",
+              backgroundColor: "#fefefc",
               cursor: "default",
               flexDirection: "column",
               borderRadius: "5px",
@@ -130,7 +130,7 @@ const EditGoal = ({ closeModal, id: targetId }: EditGoalProps) => {
               padding="0.5rem"
               margin="0.5rem"
             >
-              <Button variant="outlined" onClick={handleGoalUpdate}>
+              <Button variant="contained" onClick={handleGoalUpdate}>
                 Save
               </Button>
               <Button variant="outlined" onClick={() => closeModal()}>
