@@ -20,7 +20,7 @@ function App() {
 
   return (
     <section className="app">
-      <Box padding="3rem 6%" width="80%">
+      <Box padding="2rem 6%" max-width="100%">
         <FlexCenter sx={{ flexDirection: "column" }}>
           <Typography
             variant="h4"
