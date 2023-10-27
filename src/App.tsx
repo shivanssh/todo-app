@@ -10,13 +10,21 @@ const DELETE_WARNING_MSG =
 
 function App() {
   const dispatch = useAppDispatch();
-  const { goals } = useAppSelector((state) => state);
+  const goals = useAppSelector((state) => state.goals);
 
   const handleDeleteAll = () => {
     if (confirm(`${DELETE_WARNING_MSG}`)) {
       dispatch(deleteAllGoals());
     }
   };
+
+  if (!navigator.cookieEnabled) {
+    return (
+      <FlexCenter>
+        <Typography>Please enable cookie to use the application</Typography>
+      </FlexCenter>
+    );
+  }
 
   return (
     <section className="app">
